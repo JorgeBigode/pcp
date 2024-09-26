@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/login.css">
+    <style>
+        .error-message {
+            color: red;
+            font-weight: bold;
+            background-color: #f8d7da;
+            border: 1px solid #f5c6cb;
+            padding: 10px;
+            margin: 0; 
+            border-radius: 5px;
+        }
+    </style>
+    <title>LOGIN</title>
+</head>
+<body>
+    <form action="index.php" method="POST"> <!-- Alterado para enviar ao PHP -->
+        <div class="main-login">
+            <div class="left-login">
+                <h1>Acesse sua conta</h1>
+                <img src="./img/inter.svg" class="left-img" alt="inteligencia">
+            </div>
+            <div class="right-login">
+                <div class="card-login">
+                    <h1>LOGIN</h1>
+                    <div class="textfield">
+                        <label for="usuario">Usuário</label>
+                        <input type="text" name="usuario" placeholder="Usuário">
+                    </div>
+                    <div class="textfield">
+                        <label for="senha">Senha</label>
+                        <input type="password" name="senha" placeholder="Senha">
+                    </div>
+                    <div>
+                        <button type="submit" class="btn-login">Entrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
